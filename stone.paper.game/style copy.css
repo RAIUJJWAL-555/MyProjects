@@ -1,0 +1,416 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and text styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #BFD7FF;
+}
+
+/* Header styles */
+header {
+    /* background-color: #5465FF; */
+    background-color: #5865F2;
+    padding: 20px;
+    display: flex;
+    position: fixed;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 80px;
+}
+
+.logo{
+    height: 78px;
+    width: 50px;
+    background-image: url("image.png");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    justify-content: center;
+    margin-bottom: 60px;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes move{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.logo2{
+    height: 78px;
+    width: 125px;
+    background-image: url("logo.png");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    justify-content: center;
+    margin-bottom: 60px;
+
+}
+
+.l{
+    display: flex;
+}
+
+
+
+header .logo img {
+    width: 100px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+header nav ul li a:hover {
+    color: #2B3484;
+    transform: scale(1.5,1.5);
+    
+}
+
+/* Hero Section */
+.hero {
+    background-color: #626eef;
+    color: white;
+    margin-top: 60px;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta-button{
+    height: 120px;
+    width: 120px;
+/* background-image:url("icons8-discord-50.png");
+background-size: cover; */
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.dis{
+    height: 90px;
+    width: 90px;
+}
+
+/* .cta-button:hover {
+    background-color: #C0392B;
+} */
+
+/* Featured Section */
+.featured {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.featured h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.about {
+    padding: 50px 0;
+    background-color: 000000;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.event-cards {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.card {
+    background-color: rgb(254, 254, 255);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+    background-image: url("wp11694876.jpg");
+    background-size: cover;
+    /* filter: grayscale(100%); */
+    margin: 60px;
+}
+/* .card:hover{
+    /* filter: grayscale(0); */
+÷
+÷
+/* .cardd {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+}
+.cardd {
+    background-color: rgb(111, 158, 215);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+}
+.cardd {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+} */
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1rem;
+}
+
+
+.contact {
+    padding: 50px 0;
+    background-color:#626eef ;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.contact input, .contact textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact button {
+    padding: 10px;
+    background-color: #f4a261;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.contact button:hover {
+    background-color: #e76f51;
+}
+
+/* Footer styles */
+
+footer {
+    background-color: #1b1f41be;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    position: absolute;
+    width: 100%;
+}
+.applogo{
+    width: 100vw;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px;
+
+}
+.whatsapp{
+    color: greenyellow;
+    height: 50px;
+    width: 50px;
+}
+.insta{
+    color: #E1306C;
+}
+.alogo{
+    height: 100px;
+    width: 100px;
+    
+}
+i{
+    font-size: 2rem;
+    margin: 10px;
+}
+.twitter{
+    color: #1DA1F2;
+}
+.linked{
+    color: #2867B2;
+}
+.fa-brands fa-whatsapp whatsapp{
+    color: greenyellow;
+    height: 150px;
+}
+.hov:hover{
+    transform: scale(1.5,1.5);
+    background-color: #E1306C;
+    height: 30px;
+    width: 30px;
+}
+
+/* <i class="fa-brands fa-twitter"></i> */
+/* <i class="fa-brands fa-linkedin"></i> */
+/* Default for larger screens
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .logo, .logo2 {
+        margin: 10px 0;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .event-cards {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .card {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .applogo {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .alogo {
+        height: 80px;
+        width: 80px;
+    }
+
+    footer {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    header nav ul li a {
+        font-size: 0.9rem;
+    }
+
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .cta-button {
+        height: 100px;
+        width: 100px;
+    }
+
+    .dis {
+        height: 70px;
+        width: 70px;
+    }
+
+    .card h3 {
+        font-size: 1.2rem;
+    }
+
+    .card p {
+        font-size: 0.9rem;
+    }
+
+    i {
+        font-size: 1.5rem;
+    }
+}
